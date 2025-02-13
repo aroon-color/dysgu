@@ -37,7 +37,7 @@ def get_extra_args():
     if not f:
         return ['-std=c++11']
     extra_compile_args.append(f)
-    flags = ['-stdlib=libc++']
+    flags = []
     f = cpp_flag(compiler, flags)
     if f:
         extra_compile_args.append(f)
